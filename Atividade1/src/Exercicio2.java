@@ -1,4 +1,5 @@
 import java.util.concurrent.TimeUnit;
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   EXERCICIO 1   >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 public class Exercicio2 {
     public static void main(String[] args) {
         System.out.printf("metodo1\n");
@@ -61,8 +62,8 @@ public class Exercicio2 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (long i = 1; i <= n; i++) {                // c4           N
-            valor += termo;                             // c5           N - 1
+        for (long i = 1; i <= n; i++) {                // c4           N+1
+            valor += termo;                             // c5           N
             try {
                 TimeUnit.MILLISECONDS.sleep(1);
             } catch (InterruptedException e) {
@@ -77,7 +78,7 @@ public class Exercicio2 {
 
     static void metodo3 (long n) {
         double inicio = System.currentTimeMillis();
-        long valor = 0;
+        long valor = 0;            //c1 
         long termo = n * n * n;
         try {
             TimeUnit.MILLISECONDS.sleep(1);
@@ -101,16 +102,18 @@ public class Exercicio2 {
 
     static void metodo4 (long n) {
         double inicio = System.currentTimeMillis();
-        long valor = 0;
-        long termo = n * n;
+        long valor = 0;                //c1    1
+        long termo = n * n;            //c2    2
         try {
             TimeUnit.MILLISECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (long i = 1; i <= 2 * n; i++) {
-            for (long j = 1; j <= 2 * n; j++) {
-                valor += termo;
+        for (long i = 1; i <= 2 * n; i++) {        //c3    2n+1
+                                                   //2n
+            for (long j = 1; j <= 2 * n; j++) {    //c4 2n(2n+1)  
+                valor += termo;                    //c5 2n(2n)
+                //T(n)=O(n²)
                 try {
                     TimeUnit.MILLISECONDS.sleep(1);
                 } catch (InterruptedException e) {
