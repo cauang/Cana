@@ -78,16 +78,18 @@ public class Exercicio2 {
 
     static void metodo3 (long n) {
         double inicio = System.currentTimeMillis();
-        long valor = 0;            //c1 
-        long termo = n * n * n;
+        long valor = 0;            //c1         1
+        long termo = n * n * n;    //c2        1
         try {
             TimeUnit.MILLISECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (long i = 1; i <= 4; i++) {
-            for (long j = 1; j <= n; j++) {
-                valor += termo;
+        for (long i = 1; i <= 4; i++) {        //c3    5
+            
+            for (long j = 1; j <= n; j++) {    //c4    4(n+1)
+                valor += termo;                //c5    4n
+                //T(n) = O(n) ---- Linear
                 try {
                     TimeUnit.MILLISECONDS.sleep(1);
                 } catch (InterruptedException e) {
@@ -113,7 +115,7 @@ public class Exercicio2 {
                                                    //2n
             for (long j = 1; j <= 2 * n; j++) {    //c4 2n(2n+1)  
                 valor += termo;                    //c5 2n(2n)
-                //T(n)=O(n²)
+                //T(n)=O(n²) ----  QUADRÁTICA
                 try {
                     TimeUnit.MILLISECONDS.sleep(1);
                 } catch (InterruptedException e) {
@@ -128,17 +130,20 @@ public class Exercicio2 {
 
     static void metodo5 (long n) {
         double inicio = System.currentTimeMillis();
-        long valor = 0;
-        long termo = 4 * n;
+        long valor = 0;        //C1    1
+        long termo = 4 * n;    //C2    1
         try {
             TimeUnit.MILLISECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        for (long i = 1; i <= n; i++) {
-            for (long j = 1; j <= n; j++) {
-                for (long k = 1; k <= n; k++) {
-                    valor += termo;
+        for (long i = 1; i <= n; i++) {         //C3    n+1
+                                                //n
+            for (long j = 1; j <= n; j++) {     //C4  n(n+1)  
+                                                //n(n) = n²
+                for (long k = 1; k <= n; k++) { //n²(n+1)
+                    valor += termo;             //n³
+                    //t(n) = O(n³) 
                     try {
                         TimeUnit.MILLISECONDS.sleep(1);
                     } catch (InterruptedException e) {
