@@ -58,7 +58,7 @@ public class Exercicio2 {
         long valor = 0;                                 // c2           1
         long termo = 4 * n * n * n;                     // c3           1
         try {
-            TimeUnit.MILLISECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
