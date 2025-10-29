@@ -54,24 +54,25 @@ public class Exercicio2 {
     }
 
     static void organizaIdade (Crianca[] A) {
-        int low = 0;
-        int mid = 0;
-        int high = A.length - 1;
+        int low = 0;                                // c1   1
+        int mid = 0;                                // c2   1       
+        int high = A.length - 1;                    // c3   1
 
-        while(mid <= high){
-            int cls = classeIdade(A[mid].idade);
-            if (cls ==0) {
-                swap(A, low, mid);
-                low++;
-                mid++;
-            }else if (cls ==1){
-                mid ++;
+        while(mid <= high){                         // c4       2n+1
+            int cls = classeIdade(A[mid].idade);    // c5       2n
+            if (cls ==0) {                            
+                swap(A, low, mid);              
+                low++;                        
+                mid++;                            
+            }else if (cls ==1){                    
+                mid ++;                           
 
-            }else {
-                swap(A, mid, high);
-                high --;
+            }else {                              
+                swap(A, mid, high);               
+                high --;                     
             }
         }
+        // t(n) = Θ(n)                           
 
     }
 
