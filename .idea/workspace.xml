@@ -6,6 +6,42 @@
   <component name="ChangeListManager">
     <list default="true" id="dc510b9c-9a08-44ed-b476-40dd3de94bac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/Cana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/src/Exercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade1/src/Exercicio3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/Cana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade2/src/Exercicio3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/Cana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade3/src/Exercicio4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/Cana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade4/src/Exercicio5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/Cana.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade5/src/Exercicio6.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +68,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.Exercicio2.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -39,10 +76,15 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Cana",
+    "last_opened_file_path": "C:/Users/ti.cauan/Documents/GitHub/Cana",
     "onboarding.tips.debug.path": "C:/Users/ti.cauan/IdeaProjects/Cana/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ti.cauan\Documents\GitHub\Cana\LABAV2\Exercicio2" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
