@@ -1,4 +1,4 @@
-public class Exercicio1 {
+public class Exercicio2 {
 
     static int[][] qtde;
     static int[][] queb;
@@ -66,20 +66,68 @@ public class Exercicio1 {
     }
 
     static int memoization(int[] p, int i, int j) {
-        //to do
+
+        if (qtde[i][j] < Integer.MAX_VALUE) {
+            return qtde[i][j];
+        }
+        if (i == j) {
+            qtde[i][j] = 0;
+            return 0;
+        }
+        int qMin = Integer.MAX_VALUE;
+        int s = 0;
+
+        for (int k = i; k < j; k++) {
+            int q = memoization(p, i, k) + memoization(p, k + 1, j) + p[i - 1] * p[k] * p[j];
+
+            if (q < qMin) {
+                qMin = q;
+                s = k;
+            }
+        }
+        qtde[i][j] = qMin;
+        queb[i][j] = s;
+
+        return qMin;
     }
 
     static int dinamico(int[] p) {
-        int n = p.length-1;
-        int m[][] = new int[n+1][n+1];
-        int s[][] = new int[n+1][n+1];
-        //to do
+        int n = p.length - 1;
+        int m[][] = new int[n + 1][n + 1];
+        int s[][] = new int[n + 1][n + 1];
+
+        for (int i = 1; i <= n; i++) {
+            m[i][i] = 0;
+        }
+        for (int l = 2; l <= n; l++) {
+            for (int i = 1; i <= n - l + 1; i++) {
+                int j = i + l - 1;
+                m[i][j] = Integer.MAX_VALUE;
+                for (int k = i; k <= j - 1; k++) {
+                    int q = m[i][k] + m[k + 1][j] + p[i - 1] * p[k] * p[j];
+                    if (q < m[i][j]) {
+                        m[i][j] = q;
+                        s[i][j] = k;
+                    }
+                }
+            }
+        }
         imprime(s, 1, n);
         return m[1][n];
     }
 
-    static void imprime(int[][]s, int i, int j) {
-        //to do
+    static void imprime(int[][] s, int i, int j) {
+        if (i == j) {
+            System.out.print("A" + i);
+        } else {
+            System.out.print("(");
+            // Imprime o lado ESQUERDO do corte (de i até s[i][j])
+            imprime(s, i, s[i][j]);
+            System.out.print(" x ");
+            // Imprime o lado DIREITO do corte (de s[i][j]+1 até j)
+            imprime(s, s[i][j] + 1, j);
+            System.out.print(")");
+        }
     }
 
 }
